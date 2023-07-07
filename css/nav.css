@@ -1,0 +1,68 @@
+.bnav {
+  background-color: #af599e;
+  color: #fff;
+  box-shadow: 10px 10px 5pc 0px #171717;
+  transition: background-color 0.3s, color 0.3s;
+  /* Transiciones suaves de 0.3 segundos */
+}
+
+.item-nav{
+  margin-left: 10px;
+}
+
+.item-nav a{
+  display: inline-block;
+  padding: 20px 30px;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Modo_Oscuro {
+  background-color: black !important;
+  color: #fbfbfb !important;
+}
+
+.opciones {
+  display: flex;
+  list-style-type: none;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.bnav:hover {
+  /* Estilos al pasar el mouse sobre el elemento */
+  background-color: #de0876;
+}
+
+#boton{
+  width: 50px;
+  background-color: #af599e;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+#boton i{
+  color: white;
+  font-size: 16px;
+}
+
+/* Media queries para pantallas medianas y grandes */
+@media (min-width: 1200px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,212 @@
+/* En este archivo escriban su CSS */
+/* Fonts 
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Lato:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Lato:wght@300;700&display=swap');
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Para que el scrolleo en la one page sea suave */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Amiri Quran', serif;
+  font-family: 'Lato', sans-serif;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+header {
+  height: 90px;
+  background-color: #fbfbfb;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 .1rem 1rem 0 rgba(0, 0, 0, .2);
+  top: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+img {
+  border-radius: 250%;
+  width: 300px;
+  max-width: 100%;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Descargar {
+  background-color: #af599e;
+  color: #fbfbfb;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Descargar:hover {
+  box-shadow: 10px 10px 5pc 0px #171717;
+  background-color: #de0876;
+}
+
+.contenedor1 {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.contenedor2 {
+  background-color: rgba(175, 89, 158, 0.3);
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#inf-hablemos{
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #af599e;
+  color: #fbfbfb;
+  font-size: 28px;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cnt {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+  margin: 4rem 0;
+  font-family: "Font Awesome";
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  padding: 20px;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media queries */
+@media (min-width: 1200px) {
+
+  h1 {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 32;
+  }
+
+  section {
+    flex-direction: column;
+    font-size: 18px;
+
+  }
+
+  .img{
+    width: 400px;
+  }
+
+  article.contenedor1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    line-height: 1.2;
+  }
+
+  .presentacion{
+    max-width: 600px;
+  }
+
+  .contenedor2{
+    max-width: 700px;
+  }
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+/* main {
+    max-width: 1200px;
+    margin: auto;
+    } */
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
